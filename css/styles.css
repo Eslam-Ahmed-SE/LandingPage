@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    background: #fff8cd;
+}
+
+
+main {
+    padding: 10vh 5vw 10vh;
+}
+
+.main__hero {
+    height: 80vh;
+    min-height: 40vh;
+    padding-top: 3em;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: #FFF;
+}
+
+.main__hero h1 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 3em;
+    margin: 3em 2rem 0 5rem;
+}
+
+@media only screen and (min-width: 35em){
+    .main__hero h1 {
+        font-size: 7em;
+        margin: 1em 4rem 0em;
+    }
+}
+
+.main__hero p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.5em;
+    margin: 0em 7rem;   
+}
+
+section {
+    position: relative;
+    min-height: 80vh;
+    background: #FFF;
+    margin-top: 25px;
+    border-radius: 5px;
+}
+
+section h2 {
+    border-bottom: 1px solid #ffe05d;
+    font-family: 'Oxygen', Sans-Serif;
+    font-size: 3em;
+}
+
+section p {
+    line-height: 1.6em;
+}
+
+.navbar__menu {
+    background: #646464;
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar__menu ul {
+    padding-left: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.navbar__menu li {
+    display: inline-block;
+}
+
+.navbar__menu .menu__link {
+    display: block;
+    padding: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.navbar__menu .menu__link:hover {
+/*    background: #333;*/
+    background: #ff9642;
+    transition: ease 0.3s all;
+}
+
+.navbar__menu .menu__activeLink {
+    background: #ff9642;
+    transition: ease 0.3s all;
+}
+
+.page__header {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.page__footer {
+    background: #ff9642;
+    padding: 3em;
+    color: #fff;
+}
+
+.page__footer p{
+    color: #fff;
+}
+
+.landing__container {
+    padding: 1em;
+    text-align: left;
+}
+
+@media only screen and (min-width: 35em){
+    .landing__container {
+        max-width: 50em;
+        padding: 4em;
+    }
+}
+
+section.active-section {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+section.active-section h2 {
+    border-bottom: 2px solid #ff9642;
+}
+
